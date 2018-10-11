@@ -1,5 +1,6 @@
 @import "scss/config";
 
+
 * {
   padding: 0;
   margin: 0;
@@ -14,11 +15,19 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
+  font-size: 16px;
+  /*Bæta við font hér*/
+  
+}
 
-  // TODO fleiri grunn stillingar
+body{
+  background-color: #ffffff;
+  color: #000000;
+  max-width: $max-width;
+  margin: 0 auto;
+
 }
 
 
-
-// TODO sækja allar sass skrár
-@import "scss/...";
+@import "scss/button";
+@import "scss/header";

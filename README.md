@@ -1,3 +1,14 @@
+Leiðbeiningar:
+
+Til að keyra:
+npm install
+npm run dev
+
+
+Til að keyra stylelint:
+npm run lint
+
+
 
 # Hópverkefni 1
 

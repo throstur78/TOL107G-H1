@@ -1,0 +1,70 @@
+@import "config";
+
+// TODO stillingar hér
+
+
+
+.header{
+    width: 100%;
+    background-color: #afb281;
+}
+
+.headline{
+    text-align: center;
+}
+
+.menubar{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.menubar__text{
+    align-content: space-around;
+    text-transform: uppercase;
+    padding: 10px;
+
+    transition: color 300ms ease-in-out;
+
+    /* Muna: einn textinn er með underline, þ.e. síðan sem er valin hverju sinni*/
+    
+}
+
+.menubar__text:hover{
+    color:#cee8ff;
+}
+
+.checkout{
+    float: right;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    /*Fer í miðju skjásins undir "menubar" ef width < 700*/
+}
+
+.checkout__image{
+    align-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.checkout__text{
+    transition: color 300ms ease ease-in-out;
+}
+
+.checkout__text:hover{
+    color:#cee8ff;
+}
+
+
+
+
+/*Allir litir sem eru í verkefninu:
+color: #afb281;
+color: #cee8ff;
+color: #fcffd2;
+color: #cc9694;
+color: #000000:
+color: #ffffff;
+*/
