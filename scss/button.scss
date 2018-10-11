@@ -1,21 +1,18 @@
-// ÞETTA ER AFRIT FRÁ ÓLAFI
-//Á EFTIR AÐ BREYTA OG SETJA INN RÉTT GILDI
+@import "config";
+
 .button{
     display: inline-block;
+    background-color: #cc9694;
+    color: #000000;
+    
+    padding: $gutter/2 $gutter;
+    text-align: center;
 
-    width: 100%;
-    max-width: 250px;
-    padding: 10px 5 px;
-    margin: 0;
-
-    color: #000;
-
-    border: 1px solid #000;
-
-    transition: color 500ms ease;
+    transition: color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
 
     &:hover{
-        color: #0f0;
-
+        background-color:#000000 ;
+        color: #cc9694;
     }
 }

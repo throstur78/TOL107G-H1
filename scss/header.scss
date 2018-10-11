@@ -28,11 +28,11 @@
 
     /* Muna: einn textinn er með underline, þ.e. síðan sem er valin hverju sinni*/
     
+    &:hover{
+        color:#cee8ff;
+    }
 }
 
-.menubar__text:hover{
-    color:#cee8ff;
-}
 
 .checkout{
     float: right;
@@ -51,13 +51,11 @@
 
 .checkout__text{
     transition: color 300ms ease ease-in-out;
+
+    &:hover{
+        color:#cee8ff;
+    }
 }
-
-.checkout__text:hover{
-    color:#cee8ff;
-}
-
-
 
 
 /*Allir litir sem eru í verkefninu:
