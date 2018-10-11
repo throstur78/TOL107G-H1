@@ -14,11 +14,20 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-
   // TODO fleiri grunn stillingar
 }
 
+/* smá example, virkar ekki, fæ error frá npm run lint 
 
+body {
+  font-size: 10px;
+
+  &.red {
+    color: #666;
+  }
+} */
 
 // TODO sækja allar sass skrár
-@import "scss/...";
+// @import "scss/...";
+@import "scss/button";
+@import "scss/list";
