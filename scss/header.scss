@@ -1,9 +1,5 @@
 @import "config";
 
-// TODO stillingar hér
-
-
-
 .header{
     width: 100%;
     background-color: #afb281;
@@ -16,41 +12,54 @@
 .menubar{
     padding: 10px;
     display: flex;
-    justify-content: center;
-}
+    justify-content:space-between;
+    align-items: center;
 
-.menubar__text{
-    align-content: space-around;
-    text-transform: uppercase;
-    padding: 10px;
+    &__links{
+        display: flex;
+    }
 
-    transition: color 300ms ease-in-out;
-
-    /* Muna: einn textinn er með underline, þ.e. síðan sem er valin hverju sinni*/
-    
-    &:hover{
-        color:#cee8ff;
+    &__text{
+        align-content: space-between;
+        text-transform: uppercase;
+        padding: 10px;
     }
 }
 
-
 .checkout{
-    float: right;
     display: flex;
     justify-content: center;
     padding: 10px;
     align-items: center;
     /*Fer í miðju skjásins undir "menubar" ef width < 700*/
+
+    &__image{
+        align-content: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text{
+        margin: $gutter/2;
+        transition: color 300ms ease ease-in-out;
+    
+        &:hover{
+            color:#cee8ff;
+        }
+    }
+    
+
 }
 
-.checkout__image{
-    align-content: center;
-    width: 20px;
-    height: 20px;
-}
 
-.checkout__text{
-    transition: color 300ms ease ease-in-out;
+
+
+
+/*Active síða á að vera underline*/
+.link{    
+    color: #000000;
+    transition: color 300ms ease-in-out;
+    text-decoration: none;
 
     &:hover{
         color:#cee8ff;

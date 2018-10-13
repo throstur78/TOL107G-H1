@@ -12,81 +12,97 @@
     <header class="header">
         <h1 class="headline">Vöruhúsið</h1>
         <nav class="menubar">
-            <p class="menubar__text" a href="./index.html">FORSÍÐA</p>
-            <p class="menubar__text" a href="./pages/products.html">VÖRUR</p> 
-            <p class ="menubar__text" a href="./pages/staff.html">STARFSFÓLK</p>
+          <div class="menubar__links">
+            <p class="menubar__text"> <a class="link" href="./index.html">FORSÍÐA</a></p>
+            <p class="menubar__text"> <a class="link" href="./pages/products.html">VÖRUR</a></p> 
+            <p class ="menubar__text"> <a class="link" href="./pages/staff.html">STARFSFÓLK</a></p>
+          </div>
+          <div class="checkout">
+            <img class="checkout__image" src="./img/cart.svg" alt="Checkout">
+            <div class="checkout__text"> <a class="link" href="./pages/cart.html">Karfa (3)</a></div>
+          </div>
         </nav>
-        <div class="checkout"> 
-          <img class="checkout__image" src="./img/cart.svg" alt="Checkout">
-          <div class="checkout__text" a href="./pages/cart.html">Karfa (3)</div>
-        </div>
     </header>
 
     <main>
       <div class="list">
         <div class="list__row">
           <div class="list__col">
-            <h2 class="strongText">Allar vörurnar</h2>
-            <p>Vöruhúsið hefur allar þær vörur sem þig vantar.</p>
-            <button class="button">
-              <div class = "button__text">Skoða vörur</div>
-            </button>
+            <div class="list__row--vertical">
+              <h2 class="textStrong">Allar vörurnar</h2>
+              <p class="textNormal">Vöruhúsið hefur allar þær vörur sem þig vantar.</p>
+              <button class="button">
+                <div class = "button__text">Skoða vörur</div>
+              </button>
+            </div>
           </div>
           <div class="list__col">
               <img class="listImage" src="./img/products.jpg">
           </div>  
         </div>
-        
-      </div>
-    
-      <div>
-          <img class="mainImage" src="./img/team.jpg">
-          <div> 
-              Besta starfsfólkið
-              Starfsfólkið okkar hugsar vel um þig.
-              Texti á takka: Kynnast starfsfólki
+
+        <div class="list__row">
+          <div class="list__col">
+            <img class="listImage" src="./img/team.jpg">
+          </div>  
+          <div class="list__col">
+            <div class="list__row--vertical">
+              <h2 class="textStrong">Besta starfsfólkið</h2>
+              <p class="textNormal">Starfsfólkið okkar hugsar vel um þig.</p>
+              <button class="button">
+                <div class = "button__text">Kynnast starfsfólki</div>
+              </button>
+            </div>
           </div>
         </div>
+      </div>
     </main>
 
-    <footer>
-        <div class="dalkar">
-          <div class="dalkur">
-            <div class="dalkur__fyrirsogn">
-                Vöruflokkar
-            </div>
-            <ul class="dalkur__listi">
-              <li class="dalkur__vara">Nauðsynjavörur</li>
-              <li class="dalkur__vara">Frábærar vörur</li>
-              <li class="dalkur__vara">Ómissandi vörur</li>
-              <li class="dalkur__vara">Ótrúlegar vörur</li>
-              <li class="dalkur__vara">Magnaðar vörur</li>
+    <footer class="footer">
+      <div class="footerList">
+        <div class="footerList__row">
+          <div class="footerList__col">
+            <h3 class="footerList__headline">Vöruflokkar</h3>
+            <ul class="footerList__row--vertical">
+              <li class="footerList__item">Nauðsynjavörur</li>
+              <li class="footerList__item">Frábærar vörur</li>
+              <li class="footerList__item">Ómissandi vörur</li>
+              <li class="footerList__item">Ótrúlegar vörur</li>
+              <li class="footerList__item">Magnaðar vörur</li>
             </ul>
           </div>
 
-      
-        
-        Vöruflokkar
-        Trylltar vörur
-        Geggjaðar vörur
-        Svakalegar vörur
-        Fáránlegar vörur
-        Klikkaðar vörur
-        Vöruflokkar
-        Nýjar vörur
-        Gamlar vörur
-        Skrítnar vörur
-        Síður
-        Allar vörur
-        Starfsfólk
-        Karfa
-      </div>
-      </div>
-      <div class = "trademark">
-          © 2018 Vöruhúsið
-      </div>
+          <div class="footerList__col">
+            <h3 class="footerList__headline">Vöruflokkar</h3>
+            <ul class="footerList__row--vertical">
+              <li class="footerList__item">Trylltar vörur</li>
+              <li class="footerList__item">Geggjaðar vörur</li>
+              <li class="footerList__item">Svakalegar vörur</li>
+              <li class="footerList__item">Fáranlegar vörur</li>
+              <li class="footerList__item">Klikkaðar vörur</li>
+            </ul>
+          </div>
 
-        
+          <div class="footerList__col">
+            <h3 class="footerList__headline">Vöruflokkar</h3>
+            <ul class="footerList__row--vertical">
+              <li class="footerList__item">Nýjar vörur</li>
+              <li class="footerList__item">Gamlar vörur</li>
+              <li class="footerList__item">Skrítnar vörur</li>
+            </ul>
+          </div>
+
+          <div class="footerList__col">
+            <h3 class="footerList__headline">Síður</h3>
+            <ul class="footerList__row--vertical">
+              <li class="footerList__item">Allar vörur</li>
+              <li class="footerList__item">Starfsfólk</li>
+              <li class="footerList__item">Karfa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class = "trademark">© 2018 Vöruhúsið</div>  
     </footer>
 
 

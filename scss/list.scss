@@ -1,5 +1,5 @@
 // ÞETTA ER AFRIT FRÁ ÓLAFI
-//Á EFTIR AÐ BREYTA OG SETJA INN RÉTT GILDI
+
 
 @import "config";
 
@@ -19,6 +19,13 @@
         @media (min-width: 600px){
             flex-wrap: nowrap;
         }
+    }
+
+    &__row--vertical{
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     &__col{
