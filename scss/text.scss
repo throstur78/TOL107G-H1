@@ -1,0 +1,13 @@
+//Texti sem birtist í header og footer eru skilgreindir í þeim scss skrám ekki hér
+
+@import "config";
+
+.textStrong{
+    margin: $gutter 0;
+
+}
+
+.textNormal{
+    margin: $gutter 0;
+}
+
