@@ -1,0 +1,77 @@
+@import "config";
+
+.header{
+    width: 100%;
+    background-color: #afb281;
+}
+
+.headline{
+    text-align: center;
+}
+
+.menubar{
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    &__links{
+        display: flex;
+    }
+
+    &__text{
+        align-content: space-between;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+}
+
+.checkout{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    /*Fer í miðju skjásins undir "menubar" ef width < 700*/
+
+    &__image{
+        align-content: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text{
+        margin: $gutter/2;
+        transition: color 300ms ease ease-in-out;
+    
+        &:hover{
+            color:#cee8ff;
+        }
+    }
+    
+
+}
+
+
+
+
+
+/*Active síða á að vera underline*/
+.link{    
+    color: #000000;
+    transition: color 300ms ease-in-out;
+    text-decoration: none;
+
+    &:hover{
+        color:#cee8ff;
+    }
+}
+
+
+/*Allir litir sem eru í verkefninu:
+color: #afb281;
+color: #cee8ff;
+color: #fcffd2;
+color: #cc9694;
+color: #000000:
+color: #ffffff;
+*/

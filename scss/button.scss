@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .button {
   display: inline-block;
 
@@ -16,3 +17,32 @@
     color: #0f0;
   }
 }
+=======
+@import "config";
+
+.button{
+    background-color: #cc9694;
+    color: #000000;
+    
+    padding: $gutter/2 $gutter;
+    text-align: center;
+    margin: $gutter 0;
+
+    //Má skilgreina breidd takkans svona? Ég bara spyr...
+    width: 200px;
+
+    transition: color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+
+
+
+    &:hover{
+        background-color:#000000 ;
+        color: #cc9694;
+    }
+
+    &__text{
+        
+    }
+}
+>>>>>>> HTML-BEM
