@@ -3,5 +3,42 @@
 @import "scss/footer";
 
 .staff {
-  
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.staff:hover .staff__starfsmadur, .staff.hover .staff__starfsmadur {
+		transform: rotateY(180deg);
+	}
+
+.staff, .staff__image, .staff__description {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.staff__starfsmadur {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.staff__image, .staff__description {
+	backface-visibility: hidden;
+	position: center;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.staff__image {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.staff__description {
+	transform: rotateY(180deg);
 }
