@@ -45,11 +45,48 @@
 
     &__boxes{
         display: flex;
-        justify-content: space-between;
+    }
+  
+    
+
+    &__boxInput{
+        flex-grow: 1;
+        border: solid 1px;
+        border-radius: 5px;
+        padding: 10px;
+        
     }
 
-    &__boxCheckout{
-        display: flex;
-        justify-content: space-around;
+    &__amount{
     }
+}
+
+.checkoutButton {
+    
+    &__box{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+        border: solid 1px;
+        border-radius: 5px;
+    }
+
+    &__image {
+        align-content: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text {
+        margin: $gutter/2;
+        transition: color 300ms ease ease-in-out;
+
+        &:hover {
+            color:$lightBlue;
+        }
+    }
+
+
+
 }
