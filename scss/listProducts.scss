@@ -29,10 +29,27 @@
     }
 
     &__col {
-        @include columns (6);
+        @include columns (12);
 
         @media (min-width: 600px){
+            @include columns(6);
+        }
+
+        @media (min-width: 1000px){
             @include columns(4);
         }
+    }
+}
+
+.purchase{
+
+    &__boxes{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__boxCheckout{
+        display: flex;
+        justify-content: space-around;
     }
 }
