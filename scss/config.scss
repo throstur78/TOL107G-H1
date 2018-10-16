@@ -3,14 +3,14 @@
 $max-width: 1200px;
 $gutter: 20px;
 
-@mixin row(){
+@mixin row() {
     display: flex;
 
     margin-right: -($gutter/2);
     margin-left: -($gutter/2);
 }
 
-@mixin columns($col: 1){
+@mixin columns($col: 1) {
     width: ($col /12 * 100) * 1%;
 
     padding-right: $gutter/2;
