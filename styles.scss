@@ -1,6 +1,5 @@
 @import "scss/config";
 
-
 * {
   padding: 0;
   margin: 0;
@@ -16,16 +15,16 @@ html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
   font-size: 16px;
-  /*Bæta við font hér*/
+
+  /* Bæta við font hér */
 }
 
 body {
-  background-color: #ffffff;
-  color: #000000;
   max-width: $max-width;
   margin: 0 auto;
+  color: #000;
+  background-color: #fff;
 }
-
 
 @import "scss/button";
 @import "scss/header";
