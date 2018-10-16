@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald");
 @import "scss/config";
 
 * {
@@ -14,17 +15,18 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "Oswald", "Open Sans";
-  font-size: 16px;
 }
 
 body {
   max-width: $max-width;
   margin: 0 auto;
+  font-family: $baseFont;
+  font-size: 16px;
   color: #000;
   background-color: #fff;
 }
 
+@import "scss/grid";
 @import "scss/button";
 @import "scss/header";
 @import "scss/footer";

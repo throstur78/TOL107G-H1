@@ -1,107 +1,119 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Starfsfólk</title>
 
-    <link rel="stylesheet" href="../grid.css">
-    <link rel="stylesheet" href="../styles.css">
-  </head>
-  <body>
-    <header class="header">
-        <h1 class="headline">Vöruhúsið</h1>
-        <nav class="menubar">
-          <div class="menubar__links">
-            <p class="menubar__text"> <a class="link" href="/index.html">FORSÍÐA</a></p>
-            <p class="menubar__text"> <a class="link" href="products.html">VÖRUR</a></p>
-            <p class ="menubar__text"> <a class="link" href="staff.html">STARFSFÓLK</a></p>
-          </div>
-          <div class="checkout">
-            <img class="checkout__image" src="../img/cart.svg" alt="Checkout">
-            <div class="checkout__text"> <a class="link" href="../pages/cart.html">Karfa (3)</a></div>
-          </div>
-        </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starfsfólk</title>
 
-    <main class="staff">
-        <div class="staff__starfsmadur">
-          <img class="staff__image" src="../img/karolina.jpg" alt="Karólína Pálsdóttir">
-            <div class="staff__description">
-              <h2 class="staff__description__name">Karólína Pálsdóttir</h2>
-                <p class="staff__description__about">Karólína er forstjóri Vöruhússins.</p>
-            </div>
-        </div>
-        <div class="staff__starfsmadur">
-          <img class="staff__image" src="../img/tomas.jpg" alt="Tómas Jónsson">
-            <div class="staff__description">
-              <h2 class="staff__description__name">Tómas Jónsson</h2>
-                <p class="staff__description__about">Tómas sér um að koma vörunum til þín. Hratt og örugglega.</p>
-            </div>
-        </div>
-        <div class="staff__starfsmadur">
-          <img class="staff__image"src="../img/anna.jpg" alt="Anna Atladóttir">
-            <div class="staff__description">
-              <h2 class="staff__description__name">Anna Atladóttir</h2>
-                <p class="staff__description__about">Anna er forritari hjá Vöruhúsinu. Ef eitthvað er að, lagar Anna það.</p>
-            </div>
-        </div>
-        <div class="staff__starfsmadur">
-          <img class="staff__image"src="../img/jon.jpg" alt="Jón Guðmundsson">
-            <div class="staff__description">
-              <h2 class="staff__description__name">Jón Guðmundsson</h2>
-                <p class="staff__description__about">Jón sér um peningana. Gefðu Jóni peninga með að kaupa eitthvað klikkað hjá Vöruhúsinu.</p>
-            </div>
-        </div>
-    </main>
+  <link rel="stylesheet" href="/grid.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
 
-    <footer class="footer">
-      <div class="footerList">
-        <div class="footerList__row">
-          <div class="footerList__col">
-            <h3 class="footerList__headline">Vöruflokkar</h3>
-            <ul class="footerList__row--vertical">
-              <li class="footerList__item">Nauðsynjavörur</li>
-              <li class="footerList__item">Frábærar vörur</li>
-              <li class="footerList__item">Ómissandi vörur</li>
-              <li class="footerList__item">Ótrúlegar vörur</li>
-              <li class="footerList__item">Magnaðar vörur</li>
-            </ul>
-          </div>
+<body>
+  <header class="header">
+    <h1 class="headline">Vöruhúsið</h1>
+    <nav class="menubar">
+      <div class="menubar__links">
+        <p class="menubar__text"> <a class="link" href="/index.html">FORSÍÐA</a></p>
+        <p class="menubar__text"> <a class="link" href="/pages/products.html">VÖRUR</a></p>
+        <p class="menubar__text"> <a class="link" href="/pages/staff.html">STARFSFÓLK</a></p>
+      </div>
+      <div class="checkout">
+        <img class="checkout__image" src="/img/cart.svg" alt="Checkout">
+        <div class="checkout__text"> <a class="link" href="/pages/cart.html">Karfa (3)</a></div>
+      </div>
+    </nav>
+  </header>
 
-          <div class="footerList__col">
-            <h3 class="footerList__headline">Vöruflokkar</h3>
-            <ul class="footerList__row--vertical">
-              <li class="footerList__item">Trylltar vörur</li>
-              <li class="footerList__item">Geggjaðar vörur</li>
-              <li class="footerList__item">Svakalegar vörur</li>
-              <li class="footerList__item">Fáranlegar vörur</li>
-              <li class="footerList__item">Klikkaðar vörur</li>
-            </ul>
-          </div>
+  <main class="grid staff">
+    <div class="grid__row">
 
-          <div class="footerList__col">
-            <h3 class="footerList__headline">Vöruflokkar</h3>
-            <ul class="footerList__row--vertical">
-              <li class="footerList__item">Nýjar vörur</li>
-              <li class="footerList__item">Gamlar vörur</li>
-              <li class="footerList__item">Skrítnar vörur</li>
-            </ul>
-          </div>
+    <div class="grid__col--6 staff__starfsmadur">
+      <img class="staff__image" src="/img/karolina.jpg" alt="Karólína Pálsdóttir">
+      <div class="staff__description">
+        <h2 class="staff__description__name">Karólína Pálsdóttir</h2>
+        <p class="staff__description__about">Karólína er forstjóri Vöruhússins.</p>
+      </div>
+    </div>
 
-          <div class="footerList__col">
-            <h3 class="footerList__headline">Síður</h3>
-            <ul class="footerList__row--vertical">
-              <li class="footerList__item">Allar vörur</li>
-              <li class="footerList__item">Starfsfólk</li>
-              <li class="footerList__item">Karfa</li>
-            </ul>
-          </div>
+    <div class="grid__col--6 staff__starfsmadur">
+      <img class="staff__image" src="/img/tomas.jpg" alt="Tómas Jónsson">
+      <div class="staff__description">
+        <h2 class="staff__description__name">Tómas Jónsson</h2>
+        <p class="staff__description__about">Tómas sér um að koma vörunum til þín. Hratt og örugglega.</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="grid__row">
+      <div class="grid__col--6 staff__starfsmadur">
+        <img class="staff__image" src="/img/anna.jpg" alt="Anna Atladóttir">
+        <div class="staff__description">
+          <h2 class="staff__description__name">Anna Atladóttir</h2>
+          <p class="staff__description__about">Anna er forritari hjá Vöruhúsinu. Ef eitthvað er að, lagar Anna það.</p>
         </div>
       </div>
-      <div class = "trademark">© 2018 Vöruhúsið</div>
-    </footer>
+
+      <div class="grid__col--6 staff__starfsmadur">
+        <img class="staff__image" src="/img/jon.jpg" alt="Jón Guðmundsson">
+        <div class="staff__description">
+          <h2 class="staff__description__name">Jón Guðmundsson</h2>
+          <p class="staff__description__about">Jón sér um peningana. Gefðu Jóni peninga með að kaupa eitthvað klikkað hjá Vöruhúsinu.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footerList">
+      <div class="footerList__row">
+        <div class="footerList__col">
+          <h3 class="footerList__headline">Vöruflokkar</h3>
+          <ul class="footerList__row--vertical">
+            <li class="footerList__item"><a href="/pages/products.html">Nauðsynjavörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Frábærar vörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Ómissandi vörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Ótrúlegar vörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Magnaðar vörur</a></li>
+          </ul>
+        </div>
+
+        <div class="footerList__col">
+          <h3 class="footerList__headline">Vöruflokkar</h3>
+          <ul class="footerList__row--vertical">
+            <li class="footerList__item"><a href="/pages/products.html">Trylltar vörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Geggjaðar vörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Svakalegar vörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Fáranlegar vörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Klikkaðar vörur</a></li>
+          </ul>
+        </div>
+
+        <div class="footerList__col">
+          <h3 class="footerList__headline">Vöruflokkar</h3>
+          <ul class="footerList__row--vertical">
+            <li class="footerList__item"><a href="/pages/products.html">Nýjar vörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Gamlar vörur</a></li>
+            <li class="footerList__item"><a href="/pages/products.html">Skrítnar vörur</a></li>
+          </ul>
+        </div>
+
+        <div class="footerList__col">
+          <h3 class="footerList__headline">Síður</h3>
+          <ul class="footerList__row--vertical">
+            <li class="footerList__item"><a href="/pages/products.html">Allar vörur</a></li>
+            <li class="footerList__item"><a href="/pages/staff.html">Starfsfólk</a></li>
+            <li class="footerList__item"><a href="/pages/cart.html">Karfa</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="trademark">© 2018 Vöruhúsið</div>
+  </footer>
 
 
-  </body>
+</body>
+
 </html>

@@ -1,4 +1,23 @@
-// ÞETTA ER AFRIT FRÁ ÓLAFI
+// Text and Fonts
+$baseFont: "Open Sans";
+$headlineFont: "Oswald";
+
+// Base Colors
+$uglyYellow: #afb281;
+$lightBlue: #cee8ff;
+$yellow: #fcffd2;
+$salmon: #cc9694;
+$black: #000000;
+$white: #ffffff;
+
+// Header Colors
+$headerBgColor: $uglyYellow;
+$headerColor: $black;
+
+// Footer Colors
+$footerBgColor: $salmon;
+$footerColor: $black;
+$footerLinkColor: $yellow;
 
 $max-width: 1200px;
 $gutter: 20px;

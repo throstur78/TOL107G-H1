@@ -1,0 +1,16 @@
+.grid__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 799px){
+  .grid__col--6 {
+    max-width: 100%
+  }
+}
+
+@media (min-width: 800px) {
+  .grid__col--6{
+    max-width: 50%;
+  }
+}

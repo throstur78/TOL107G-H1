@@ -1,8 +1,8 @@
 @import "config";
 
 .button {
-    background-color: #cc9694;
-    color: #000000;
+    background-color: $salmon;
+    color: $black;
 
     padding: $gutter/2 $gutter;
     text-align: center;
@@ -17,8 +17,8 @@
 
 
     &:hover {
-        background-color:#000000 ;
-        color: #cc9694;
+        background-color:$black ;
+        color: $salmon;
     }
 
     &__text {
