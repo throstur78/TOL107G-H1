@@ -14,7 +14,7 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: Oswald, "Open Sans";
+  font-family: "Open Sans";
   font-size: 16px;
 }
 
@@ -32,7 +32,5 @@ body {
 @import "scss/images";
 @import "scss/text";
 @import "scss/listProducts";
-<<<<<<< HEAD
-@import "scss/staff"
-=======
->>>>>>> fb87293b00d54eca089c9436b56725dcf1c89c15
+@import "scss/staff";
+@import "scss/listCart";
