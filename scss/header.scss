@@ -1,15 +1,15 @@
 @import "config";
 
-.header{
+.header {
     width: 100%;
     background-color: #afb281;
 }
 
-.headline{
+.headline {
     text-align: center;
 }
 
-.menubar{
+.menubar {
     padding: 10px;
     display: flex;
     justify-content:space-between;
@@ -26,28 +26,28 @@
     }
 }
 
-.checkout{
+.checkout {
     display: flex;
     justify-content: center;
     padding: 10px;
     align-items: center;
     /*Fer í miðju skjásins undir "menubar" ef width < 700*/
 
-    &__image{
+    &__image {
         align-content: center;
         width: 20px;
         height: 20px;
     }
 
-    &__text{
+    &__text {
         margin: $gutter/2;
         transition: color 300ms ease ease-in-out;
-    
-        &:hover{
+
+        &:hover {
             color:#cee8ff;
         }
     }
-    
+
 
 }
 
@@ -56,7 +56,7 @@
 
 
 /*Active síða á að vera underline*/
-.link{    
+.link{
     color: #000000;
     transition: color 300ms ease-in-out;
     text-decoration: none;

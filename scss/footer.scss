@@ -1,12 +1,12 @@
 @import "config";
 
-.footer{
+.footer {
     width: 100%;
     background-color: #cc9694;
 }
 
-.footerList{
-    
+.footerList {
+
     max-width: $max-width;
     margin: 0 auto;
 
@@ -15,7 +15,7 @@
         padding-left: $gutter;
     }
 
-&__row{
+&__row {
     @include row;
     flex-wrap: wrap;
 
@@ -24,14 +24,14 @@
     }
 }
 
-&__row--vertical{
+&__row--vertical {
     height:100%;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     list-style: none;
 }
 
-&__col{
+&__col {
     @include columns (6);
 
     @media (min-width: 900px){
@@ -39,18 +39,18 @@
     }
 }
 
-&__headline{
+&__headline {
     margin: $gutter 0;
 }
 
 //Set margin sem 1/4 af gutter en skv. verklýsingu
 //ætti það í minnsta lagi að vera 1/2.
-&__item{
+&__item {
     margin: $gutter/4 0;
     color: #cee8ff;
 
     transition: color 300ms ease-in-out;
-   
+
     &:hover{
         color:#000000;
     }
@@ -58,7 +58,7 @@
 
 }
 
-.trademark{
+.trademark {
     margin: $gutter/2 0;
     text-align: center;
 }
