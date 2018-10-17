@@ -17,10 +17,11 @@
     color: $yellow;
     text-decoration: none;
 
-    &__hover {
+    &:hover {
     color: $black;
     }
   }
+
   &__row {
     @include row;
     flex-wrap: wrap;
