@@ -20,25 +20,9 @@
         }
     }
 
-    &__row--vertical {
-        height:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        @media (min-width: 800px){
-            @include columns(8);
-        }
-
-    }
 
     &__col {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        max-height: 600px;
         padding-bottom: 50px;
-    
         @include columns (12);
 
         @media (min-width: 600px){
@@ -46,9 +30,45 @@
         }
     }
 
-    &__nedrabox {
-        justify-content: flex-end;
+    &__productInfo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        max-width: 470px;
+        max-height: 600px;
     }
+
+    &__nedrabox {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+    }
+
+    &__nedstaflex{
+        display: flex;
+        
+    }
+
+    .buttonKarfa{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    .fjoldi{
+        width: 90px;
+        height: 30px;
+    }
+
+
 
 
 }
@@ -140,20 +160,23 @@ select {
 }
 
 .fyrirsogn{
+    margin: $gutter 0;
     @media (max-width: $max-width - 1){
         padding-right: $gutter;
         padding-left: $gutter;
     }
 }
 
-.buttonKarfa{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 35px;
+.textStrong{
+    margin: 0;
 }
 
+
+
+
+
+.textNormal{
+    margin: 0;
+}
 
 
