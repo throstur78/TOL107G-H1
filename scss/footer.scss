@@ -15,8 +15,12 @@
 
   ul li a {
     color: $yellow;
-  }
+    text-decoration: none;
 
+    &__hover {
+    color: $black;
+    }
+  }
   &__row {
     @include row;
     flex-wrap: wrap;
