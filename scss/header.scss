@@ -7,6 +7,8 @@
 
 .headline {
     text-align: center;
+    font-family:'Oswald';
+    font-size: 48px;
 }
 
 .menubar {
@@ -48,9 +50,17 @@
         }
     }
 
-
 }
 
+.menubar__text {
+    font-family: 'Oswald';
+    font-size: 18px;
+    
+}
+
+.menubar__links {
+    margin: 0 auto;
+}
 
 
 

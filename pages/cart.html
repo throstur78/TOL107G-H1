@@ -7,8 +7,8 @@
     <title>Vörur í körfu</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:700" rel="stylesheet">
 
-    <link rel="stylesheet" href="../grid.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="/grid.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
@@ -16,13 +16,13 @@
         <h1 class="headline">Karfa</h1>
         <nav class="menubar">
             <div class="menubar__links">
-                <p class="menubar__text"> <a class="link" href="../index.html">FORSÍÐA</a></p>
-                <p class="menubar__text"> <a class="link" href="../pages/products.html">VÖRUR</a></p>
-                <p class="menubar__text"> <a class="link" href="../pages/staff.html">STARFSFÓLK</a></p>
+                <p class="menubar__text"> <a class="link" href="/index.html">FORSÍÐA</a></p>
+                <p class="menubar__text"> <a class="link" href="/pages/products.html">VÖRUR</a></p>
+                <p class="menubar__text"> <a class="link" href="/pages/staff.html">STARFSFÓLK</a></p>
             </div>
             <div class="checkout">
-                <img class="checkout__image" src="../img/cart.svg" alt="Checkout">
-                <div class="checkout__text"> <a class="link" href="../pages/cart.html">Karfa (3)</a></div>
+                <img class="checkout__image" src="/img/cart.svg" alt="Checkout">
+                <div class="checkout__text"> <a class="link" href="/pages/cart.html">Karfa (3)</a></div>
             </div>
         </nav>
     </header>
@@ -33,7 +33,7 @@
 
             <div class="cart__row">
                     <div class="cart__col">
-                        <img class="listImage" src="../img/watch.jpg">
+                        <img class="listImage" src="/img/watch.jpg">
                     </div>
                     <div class="cart__col">
                        
@@ -44,11 +44,11 @@
                             <input type="field" id="quantity" value="1">
                             <button class="buttonKarfa">
                       <div class = "buttonKarfa__text">Uppfæra</div>
-                      <img class="checkout__image" src="../img/cart.svg" alt="Checkout">
+                      <img class="checkout__image" src="/img/cart.svg" alt="Checkout">
                     </button>
                             <button class="buttonKarfa">
                         <div class = "buttonKarfa__text">Eyða úr körfu</div>
-                        <img class="checkout__image" src="../img/cart.svg" alt="Checkout">
+                        <img class="checkout__image" src="/img/cart.svg" alt="Checkout">
                     </button>
                     
                     </div>
@@ -58,7 +58,7 @@
 
             <div class="cart__row">
                     <div class="cart__col">
-                        <img class="listImage" src="../img/headphones.jpg">
+                        <img class="listImage" src="/img/headphones.jpg">
                     </div>
                     <div class="cart__col">
                
@@ -69,20 +69,20 @@
                             <input type="field" id="quantity" value="2">
                             <button class="buttonKarfa">
                               <div class = "buttonKarfa__text">Uppfæra</div>
-                              <img class="checkout__image" src="../img/cart.svg" alt="Checkout">
+                              <img class="checkout__image" src="/img/cart.svg" alt="Checkout">
                             </button>
                             <button class="buttonKarfa">
                                 <div class = "buttonKarfa__text">Eyða úr körfu</div>
-                                <img class="checkout__image" src="../img/cart.svg" alt="Checkout">
+                                <img class="checkout__image" src="/img/cart.svg" alt="Checkout">
                             </button>
                       
                     </div>
             </div>
         
 
-
-            <div class="cart__row">
-                <div class="cart__col">
+        <div class="form">    
+            <div class="form__row">
+                <div class="form__col">
                         <h2 class="textStrong">Sendingarupplýsingar</h2>
                         <div class="textNormal">
                             <label for="nafn">Nafn:</label>
@@ -280,7 +280,7 @@
                             </select>
                         </div>
                 </div>
-                <div class="cart__col">
+                <div class="form__col">
                         <h2 class="textStrong">Greiðsluupplýsingar</h2>
                         <div class="textNormal">
                             <label for="nafn">Kortanúmer:</label>
@@ -325,6 +325,7 @@
                         </div>
                 </div>
             </div>
+        </div>    
         
             <div class="cart__row">
                 <div class="cart__col">
@@ -336,57 +337,54 @@
 
         </div>
 
-
-    
-
     </main>
 
     <footer class="footer">
         <div class="footerList">
-            <div class="footerList__row">
-                <div class="footerList__col">
-                    <h3 class="footerList__headline">Vöruflokkar</h3>
-                    <ul class="footerList__row--vertical">
-                        <li class="footerList__item">Nauðsynjavörur</li>
-                        <li class="footerList__item">Frábærar vörur</li>
-                        <li class="footerList__item">Ómissandi vörur</li>
-                        <li class="footerList__item">Ótrúlegar vörur</li>
-                        <li class="footerList__item">Magnaðar vörur</li>
-                    </ul>
-                </div>
-
-                <div class="footerList__col">
-                    <h3 class="footerList__headline">Vöruflokkar</h3>
-                    <ul class="footerList__row--vertical">
-                        <li class="footerList__item">Trylltar vörur</li>
-                        <li class="footerList__item">Geggjaðar vörur</li>
-                        <li class="footerList__item">Svakalegar vörur</li>
-                        <li class="footerList__item">Fáranlegar vörur</li>
-                        <li class="footerList__item">Klikkaðar vörur</li>
-                    </ul>
-                </div>
-
-                <div class="footerList__col">
-                    <h3 class="footerList__headline">Vöruflokkar</h3>
-                    <ul class="footerList__row--vertical">
-                        <li class="footerList__item">Nýjar vörur</li>
-                        <li class="footerList__item">Gamlar vörur</li>
-                        <li class="footerList__item">Skrítnar vörur</li>
-                    </ul>
-                </div>
-
-                <div class="footerList__col">
-                    <h3 class="footerList__headline">Síður</h3>
-                    <ul class="footerList__row--vertical">
-                        <li class="footerList__item">Allar vörur</li>
-                        <li class="footerList__item">Starfsfólk</li>
-                        <li class="footerList__item">Karfa</li>
-                    </ul>
-                </div>
+          <div class="footerList__row">
+            <div class="footerList__col">
+              <h3 class="footerList__headline">Vöruflokkar</h3>
+              <ul class="footerList__row--vertical">
+                <li class="footerList__item"><a href="/pages/products.html">Nauðsynjavörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Frábærar vörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Ómissandi vörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Ótrúlegar vörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Magnaðar vörur</a></li>
+              </ul>
             </div>
+    
+            <div class="footerList__col">
+              <h3 class="footerList__headline">Vöruflokkar</h3>
+              <ul class="footerList__row--vertical">
+                <li class="footerList__item"><a href="/pages/products.html">Trylltar vörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Geggjaðar vörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Svakalegar vörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Fáranlegar vörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Klikkaðar vörur</a></li>
+              </ul>
+            </div>
+    
+            <div class="footerList__col">
+              <h3 class="footerList__headline">Vöruflokkar</h3>
+              <ul class="footerList__row--vertical">
+                <li class="footerList__item"><a href="/pages/products.html">Nýjar vörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Gamlar vörur</a></li>
+                <li class="footerList__item"><a href="/pages/products.html">Skrítnar vörur</a></li>
+              </ul>
+            </div>
+    
+            <div class="footerList__col">
+              <h3 class="footerList__headline">Síður</h3>
+              <ul class="footerList__row--vertical">
+                <li class="footerList__item"><a href="/pages/products.html">Allar vörur</a></li>
+                <li class="footerList__item"><a href="/pages/staff.html">Starfsfólk</a></li>
+                <li class="footerList__item"><a href="/pages/cart.html">Karfa</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="trademark">© 2018 Vöruhúsið</div>
-    </footer>
+      </footer>
 
 
 </body>
