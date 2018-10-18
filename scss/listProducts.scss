@@ -54,6 +54,7 @@
         border: solid 1px;
         border-radius: 5px;
         padding: 10px;
+        margin-right: $gutter/2;
         
     }
 
@@ -70,6 +71,12 @@
         align-items: center;
         border: solid 1px;
         border-radius: 5px;
+
+        transition: background-color 300ms ease-in-out;
+
+        &:hover {
+            background-color: $salmon;
+        }
     }
 
     &__image {
@@ -79,13 +86,13 @@
     }
 
     &__text {
-        margin: $gutter/2;
-        transition: color 300ms ease ease-in-out;
+        margin-left: $gutter/2;
+        
 
-        &:hover {
-            color:$lightBlue;
-        }
+        
     }
+
+    
 
 
 
