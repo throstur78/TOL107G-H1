@@ -15,6 +15,11 @@
 
   ul li a {
     color: $yellow;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: $black;
+    transition: color 300ms ease-in-out;
   }
 
   &__row {
