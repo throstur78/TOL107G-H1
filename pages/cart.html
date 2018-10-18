@@ -102,14 +102,15 @@
                     <div class="form__box">
                         <div class="form__reitirtexti">
                             <label for="nafn">Nafn:</label>
-                            <label for="address">Heimilisfang:</label>
-                            <label for="postnr">Póstnúmer:</label>
-                        </div>
-
-                        <div class="form__fields">
                             <input class="reiturinfo" type="field" name="nafn" id="nafn" class="nafnareitur" required>
+                        </div>
+                        <div class="form__reitirtexti">
+                            <label for="address">Heimilisfang:</label>
                             <input class="reiturinfo" type="address" name="address" id="address" required>
-                            <select name="postnr" id="postnr">
+                        </div>
+                        <div class="form__reitirtexti">
+                            <label for="postnr">Póstnúmer:</label>
+                            <select class="reiturinfo" name="postnr" id="postnr">
                                 <option>-Velja póstnúmer-</option>
                                 <option>101 Reykjavík</option>
                                 <option>103 Reykjavík</option>
@@ -294,62 +295,69 @@
                                 <option>902 Vestmannaeyjum</option>
                             </select>
                         </div>
+                        </div>
+
                     </div>
 
-                </div>
+                
 
                 <div class="form__col">
                     <h2 class="textStrong">Greiðsluupplýsingar</h2>
                     <div class="form__box">
                         <div class="form__reitirtexti">
                             <label for="nafn">Kortanúmer:</label>
-                            <label for="address">Korthafi:</label>
-                            <label for="address">Gildistími:</label>
-                        </div>
-
-                        <div class="form__fields">
                             <input class="reiturinfo" type="nafn" name="nafn" id="nafn" required>
+                        </div>
+                        <div class="form__reitirtexti">
+                            <label for="address">Korthafi:</label>
                             <input class="reiturinfo" type="address" name="address" id="address" required>
-                            <div class="form__monthyear">
-                                <label for="month">Mán:</label>
-                                <select name="month" id="month">
-                                <option>-01-</option>
-                                <option>-02-</option>
-                                <option>-03-</option>
-                                <option>-04-</option>
-                                <option>-05-</option>
-                                <option>-06-</option>
-                                <option>-07-</option>
-                                <option>-08-</option>
-                                <option>-09-</option>
-                                <option>-10-</option>
-                                <option>-11-</option>
-                                <option>-12-</option>
-                            </select>
-                                <label for="year">Ár:</label>
-                                <select name="year" id="year">
-                                                <option>-18-</option>
-                                                <option>-19-</option>
-                                                <option>-20-</option>
-                                                <option>-21-</option>
-                                                <option>-22-</option>
-                                                <option>-23-</option>
-                                                <option>-24-</option>
-                                                <option>-25-</option>
-                                                <option>-26-</option>
-                                                <option>-27-</option>
-                                                <option>-28-</option>
-                            </select>
-                            </div>
+                        </div>
+                        
+                        <div class="form__reitirtexti">
+                                
+                            <label for="address">Gildistími:</label>
+                            <div class="form__gildistimi">
+                            <label for="month">Mán:</label>
+                            <select name="month" id="month">
+                            <option> 01 </option>
+                            <option> 02 </option>
+                            <option> 03 </option>
+                            <option> 04 </option>
+                            <option> 05 </option>
+                            <option> 06 </option>
+                            <option> 07 </option>
+                            <option> 08 </option>
+                            <option> 09 </option>
+                            <option> 10 </option>
+                            <option> 11 </option>
+                            <option> 12 </option>
+                        </select>
+                        <label for="year">Ár:</label>
+                        <select name="year" id="year">
+                                        <option> 2018 </option>
+                                        <option> 2019 </option>
+                                        <option> 2020 </option>
+                                        <option> 2021 </option>
+                                        <option> 2022 </option>
+                                        <option> 2023 </option>
+                                        <option> 2024 </option>
+                                        <option> 2025 </option>
+                                        <option> 2026 </option>
+                                        <option> 2027 </option>
+                                        <option> 2028 </option>
+                    </select>    
+                    </div>
+                </div>
+     
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
+       
 
 
-        </div>
+        
 
         <div class="buttonkaupa">
 

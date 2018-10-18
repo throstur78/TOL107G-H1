@@ -78,71 +78,70 @@
 }
 
 .form {
-    display: flex;
-    justify-content: center;
-    max-width: $max-width;
-  
+
     @media (max-width: $max-width - 1){
         padding-right: $gutter;
         padding-left: $gutter;
     }
 
+
     &__row {
-
+        display: flex;
         @include row;
-        flex-wrap: wrap;
-  
-        @media (min-width: 600px){
-            flex-wrap: nowrap;
+
+        @media (max-width: 799px){
+            flex-direction: column;
         }
+
+        @media (min-width: 1200px){
+            @include offset(2);
+           
+        }
+
+
     }
 
-
-    &__col {
-        display: flex;
-        flex-direction: column;
-
+    &__col {  
         @include columns (12);
-        @media (min-width: 600px){
-            @include columns(6);
+        @media (min-width: 800px){
+            @include columns(12);
         }
-    }
+        @media (min-width: 1200px){
+            @include columns(4);
+        }
 
-    &__fields{
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-    }
 
-    &__monthyear{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        justify-content: space-between;
     }
 
     &__reitirtexti{
         display: flex;
-        flex-direction: column;
-
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     &__box{
         margin-top: 10px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    &__gildistimi{
+        display: flex; 
+        justify-content: space-between;
+     width: 65%;
     }
 
 }
 
 .reiturinfo {
-    width: 180px;
+    width: 65%;
     height: 25px;
     margin-bottom: 10px;
     border-radius: 4px;
     border: solid 0.5px;
     border-color: gray;
 }
+
 
 label {
     height: 25px;
