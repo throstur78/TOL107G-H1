@@ -109,10 +109,11 @@
 }
 
 input {
-    width: 180px;
+    //width: 180px; Setti comment hér því input boxið tók of mikið pláss
     height: 25px;
-    margin-bottom: 5px;
+    //margin-bottom: 5px; Setti comment hér því talan var ekki í miðjunni
     border: 0px;
+    max-width: 90px; //Boxið tók of mikið pláss
 }
 
 label {
