@@ -92,13 +92,11 @@
 }
 
 .form {
-
     @media (max-width: $max-width - 1){
         padding-right: $gutter;
         padding-left: $gutter;
         padding-top: $gutter;
     }
-
 
     &__row {
         display: flex;
@@ -107,10 +105,9 @@
         @media (max-width: 799px){
             flex-direction: column;
         }
-
         @media (min-width: 1200px){
-            @include offset(2);
-           
+            @include offset-right(2);
+            @include offset-left(2);
         }
 
     }
@@ -121,10 +118,6 @@
         @media (min-width: 800px){
             @include columns(12);
         }
-        @media (min-width: 1200px){
-            @include columns(4);
-        }
-
 
     }
 
@@ -145,7 +138,6 @@
         justify-content: space-between;
      width: 65%;
     }
-
 }
 
 .reiturinfo {
@@ -157,17 +149,14 @@
     border-color: gray;
 }
 
-
 label {
     height: 35px;
     margin-bottom: 10px;
-
 }
 
 select {
     height: 35px;
     margin-bottom: 5px;
-
 }
 
 .buttonkaupa{
