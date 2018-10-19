@@ -19,11 +19,20 @@
     }
 
     &__col {
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         @include columns (12);
 
-        @media (min-width: 600px){
+        @media (min-width: 800px){
             @include columns(6);
+        }
+    }
+
+    &__colImage {
+        padding-bottom: 20px;
+        @include columns (12);
+
+        @media (min-width: 800px){
+            @include columns(4);
         }
     }
 
@@ -42,6 +51,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: flex-end;
+        padding-top: 20px;
         
     }
 
@@ -55,7 +65,7 @@
         justify-content: center;
         align-items: center;
         width: 120px;
-        height: 25px;
+        height: 35px;
         margin-left: 10px;
         background-color: transparent;
         border-radius: 4px;
@@ -69,7 +79,7 @@
 
     .fjoldi{
         width: 90px;
-        height: 25px;
+        height: 35px;
         border-radius: 4px;
         border: 1px;
         border: solid 0.5px;
@@ -83,6 +93,7 @@
     @media (max-width: $max-width - 1){
         padding-right: $gutter;
         padding-left: $gutter;
+        padding-top: $gutter;
     }
 
 
@@ -99,10 +110,10 @@
            
         }
 
-
     }
 
-    &__col {  
+    &__col {
+        padding-bottom: $gutter; 
         @include columns (12);
         @media (min-width: 800px){
             @include columns(12);
@@ -136,7 +147,7 @@
 
 .reiturinfo {
     width: 65%;
-    height: 25px;
+    height: 35px;
     margin-bottom: 10px;
     border-radius: 4px;
     border: solid 0.5px;
@@ -145,13 +156,13 @@
 
 
 label {
-    height: 25px;
+    height: 35px;
     margin-bottom: 10px;
 
 }
 
 select {
-    height: 25px;
+    height: 35px;
     margin-bottom: 5px;
 
 }
