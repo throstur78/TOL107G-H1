@@ -12,9 +12,14 @@
         padding-left: $gutter;
     }
 
+    &__description{
+        flex-grow: 1;
+    }
+
     &__row {
         @include row;
         flex-wrap: wrap;
+        align-items: stretch;
 
         @media (min-width: 600px){
             flex-wrap: nowrap;
@@ -25,14 +30,71 @@
         height:100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     &__col {
-        @include columns (6);
+        @include columns (12);
 
         @media (min-width: 600px){
+            @include columns(6);
+        }
+
+        @media (min-width: 1000px){
             @include columns(4);
         }
     }
+}
+
+.purchase{
+
+    &__boxes{
+        display: flex;
+    }
+  
+    &__boxInput{
+        flex-grow: 1;
+        border: solid 1px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+
+.checkoutButton {
+    
+    &__box{
+        display: flex;
+        margin-left: $gutter/2;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+        border: solid 1px;
+        border-radius: 5px;
+        min-width: 140px;
+
+        transition: background-color 300ms ease-in-out;
+
+        &:hover {
+            background-color: $salmon;
+        }
+    }
+
+    &__image {
+        align-content: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text {
+        margin-left: $gutter/2;
+
+        
+
+        
+    }
+
+    
+
+
+
 }

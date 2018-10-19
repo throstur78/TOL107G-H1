@@ -133,6 +133,7 @@
 
 }
 
+<<<<<<< HEAD
 .reiturinfo {
     width: 65%;
     height: 25px;
@@ -140,6 +141,14 @@
     border-radius: 4px;
     border: solid 0.5px;
     border-color: gray;
+=======
+input {
+    //width: 180px; Setti comment hér því input boxið tók of mikið pláss
+    height: 25px;
+    //margin-bottom: 5px; Setti comment hér því talan var ekki í miðjunni
+    border: 0px;
+    max-width: 90px; //Boxið tók of mikið pláss
+>>>>>>> 1625144d222132dbec69341c6cd49a2528ebdd24
 }
 
 
