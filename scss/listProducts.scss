@@ -58,6 +58,11 @@
         border-radius: 5px;
         padding: 10px;
     }
+
+    &__amount{
+        max-width: 60px;
+        border: 0;
+    }
 }
 
 .checkoutButton {

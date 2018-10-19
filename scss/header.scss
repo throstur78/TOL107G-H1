@@ -12,13 +12,13 @@
 }
 
 .menubar {
-    padding: 10px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+    //padding: 10px;    
 
     &__links{
         display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
     }
 
     &__text{
@@ -29,11 +29,17 @@
 }
 
 .checkout {
+    position: absolute;
+    top: 80px;
+    right: $gutter/2;
     display: flex;
     justify-content: center;
     padding: 10px;
     align-items: center;
-    /*Fer í miðju skjásins undir "menubar" ef width < 700*/
+
+    @media (max-width: 599px){
+        position:static;
+    }
 
     &__image {
         align-content: center;
@@ -49,30 +55,32 @@
             color:$lightBlue;
         }
     }
-
 }
 
 .menubar__text {
     font-family: 'Oswald';
     font-size: 18px;
-    
 }
 
 .menubar__links {
     margin: 0 auto;
 }
 
-
-
-
 /*Active síða á að vera underline*/
 .link{
     color: $black;
     transition: color 300ms ease-in-out;
-    text-decoration: none;
+    
+    &:link{
+        text-decoration: none;
+    }
 
     &:hover{
         color:$lightBlue;
+    }
+
+    &:active {
+        text-decoration: underline;
     }
 }
 
