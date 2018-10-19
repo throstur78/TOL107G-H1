@@ -4,6 +4,7 @@
 @import "config";
 
 .listProduct {
+    cursor: default;
     max-width: $max-width;
     margin: 0 auto;
 
@@ -60,6 +61,7 @@
     }
 
     &__amount{
+        cursor: auto;
         max-width: 60px;
         border: 0;
     }
@@ -81,6 +83,7 @@
 
         &:hover {
             background-color: $salmon;
+            cursor: pointer;
         }
     }
 

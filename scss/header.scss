@@ -1,6 +1,7 @@
 @import "config";
 
 .header {
+    cursor: default;
     width: 100%;
     background-color: $uglyYellow;
 }
@@ -19,6 +20,7 @@
         flex-wrap: wrap;
         justify-content:center;
         align-items: center;
+        list-style: none;
     }
 
     &__text{
@@ -30,7 +32,7 @@
 
 .checkout {
     position: absolute;
-    top: 80px;
+    top: 70px;
     right: $gutter/2;
     display: flex;
     justify-content: center;
@@ -53,6 +55,7 @@
 
         &:hover {
             color:$lightBlue;
+            cursor: pointer;
         }
     }
 }
@@ -70,17 +73,11 @@
 .link{
     color: $black;
     transition: color 300ms ease-in-out;
+    text-decoration: none;
     
-    &:link{
-        text-decoration: none;
-    }
-
     &:hover{
         color:$lightBlue;
-    }
-
-    &:active {
-        text-decoration: underline;
+        cursor: pointer;
     }
 }
 
