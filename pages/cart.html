@@ -100,15 +100,15 @@
                     <h2 class="textStrong">Sendingarupplýsingar</h2>
                     <div class="form__box">
                         <div class="form__reitirtexti">
-                            <label for="nafn">Nafn:</label>
+                            <label class="labelReitir" for="nafn">Nafn:</label>
                             <input class="reiturinfo" type="field" name="nafn" id="nafn" class="nafnareitur" required>
                         </div>
                         <div class="form__reitirtexti">
-                            <label for="address">Heimilisfang:</label>
+                            <label class="labelReitir" for="address">Heimilisfang:</label>
                             <input class="reiturinfo" type="address" name="address" id="address" required>
                         </div>
                         <div class="form__reitirtexti">
-                            <label for="postnr">Póstnúmer:</label>
+                            <label class="labelReitir" for="postnr">Póstnúmer:</label>
                             <select class="reiturinfo" name="postnr" id="postnr">
                                 <option>-Velja póstnúmer-</option>
                                 <option>101 Reykjavík</option>
@@ -304,20 +304,20 @@
                     <h2 class="textStrong">Greiðsluupplýsingar</h2>
                     <div class="form__box">
                         <div class="form__reitirtexti">
-                            <label for="nafn">Kortanúmer:</label>
+                            <label class="labelReitir" for="nafn">Kortanúmer:</label>
                             <input class="reiturinfo" type="nafn" name="nafn" id="nafn" required>
                         </div>
                         <div class="form__reitirtexti">
-                            <label for="address">Korthafi:</label>
+                            <label class="labelReitir" for="address">Korthafi:</label>
                             <input class="reiturinfo" type="address" name="address" id="address" required>
                         </div>
                         
                         <div class="form__reitirtexti">
                                 
-                            <label for="address">Gildistími:</label>
+                            <label class="labelReitir" for="address">Gildistími:</label>
                             <div class="form__gildistimi">
                             <label for="month">Mán:</label>
-                            <select name="month" id="month">
+                            <select class="reiturinfo--man" name="month" id="month">
                             <option> 01 </option>
                             <option> 02 </option>
                             <option> 03 </option>
@@ -332,7 +332,7 @@
                             <option> 12 </option>
                         </select>
                         <label for="year">Ár:</label>
-                        <select name="year" id="year">
+                        <select class="reiturinfo--ar" name="year" id="year">
                                         <option> 2018 </option>
                                         <option> 2019 </option>
                                         <option> 2020 </option>

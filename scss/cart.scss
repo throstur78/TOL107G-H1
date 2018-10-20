@@ -1,6 +1,7 @@
 @import "config";
 
 .cart {
+    cursor: default;
     max-width: $max-width;
     margin: 0 auto;
 
@@ -67,13 +68,20 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 120px;
+        width: 145px;
         height: 35px;
         margin-left: 10px;
-        background-color: transparent;
         border-radius: 4px;
         border: solid 0.5px;
         border-color: gray;
+        font-size: 1em;
+
+        transition: background-color 300ms ease-in-out;
+
+        &:hover {
+            background-color: $salmon;
+            cursor: pointer;
+        }
     }
 
     .checkout__image{
@@ -88,6 +96,8 @@
         border: solid 0.5px;
         border-color: gray;
         cursor: auto;
+        padding: 10px;
+        font-size: 1em;
     }
 }
 
@@ -118,7 +128,6 @@
         @media (min-width: 800px){
             @include columns(12);
         }
-
     }
 
     &__reitirtexti{
@@ -147,16 +156,29 @@
     border-radius: 4px;
     border: solid 0.5px;
     border-color: gray;
+    font-size: 1em;
 }
 
-label {
+.reiturinfo--man {
+    width: 40px;
+    height: 35px;
+    border: solid 0.5px;
+    border-color: gray;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.reiturinfo--ar {
+    width: 80px;
+    height: 35px;
+    border: solid 0.5px;
+    border-color: gray;
+    font-size: 1em;
+}
+
+.labelReitir {
     height: 35px;
     margin-bottom: 10px;
-}
-
-select {
-    height: 35px;
-    margin-bottom: 5px;
 }
 
 .buttonkaupa{
