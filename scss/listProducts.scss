@@ -36,6 +36,7 @@
 
     &__col {
         @include columns (12);
+        margin-bottom: $gutter*2;
 
         @media (min-width: 600px){
             @include columns(6);

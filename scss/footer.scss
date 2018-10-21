@@ -4,6 +4,7 @@
   cursor: default;
   width: 100%;
   background-color: $salmon;
+  margin-top: $gutter*2;
 }
 
 .footerList {
@@ -63,7 +64,7 @@
 }
 
 .trademark {
-  margin: $gutter/2 0;
+  padding: $gutter*2 0;
   text-align: center;
 }
 /*Allir litir sem eru í verkefninu:

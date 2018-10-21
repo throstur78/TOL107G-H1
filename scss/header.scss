@@ -4,6 +4,7 @@
     cursor: default;
     width: 100%;
     background-color: $uglyYellow;
+    margin-bottom: $gutter*2;
 }
 
 .headline {
@@ -13,11 +14,15 @@
 }
 
 .menubar {
-    //padding: 10px;    
+    //padding: 10px;
+
+    display:flex;
+    flex-wrap:wrap;
 
     &__links{
+        margin-left:25%;
+        width:50%;
         display: flex;
-        flex-wrap: wrap;
         justify-content:center;
         align-items: center;
         list-style: none;
@@ -31,16 +36,16 @@
 }
 
 .checkout {
-    position: absolute;
-    top: 70px;
-    right: $gutter/2;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 10px;
     align-items: center;
+    width: 25%;
 
     @media (max-width: 599px){
-        position:static;
+        justify-content: center;
+        width:100%;
+
     }
 
     &__image {
@@ -63,10 +68,6 @@
 .menubar__text {
     font-family: 'Oswald';
     font-size: 18px;
-}
-
-.menubar__links {
-    margin: 0 auto;
 }
 
 /*Active síða á að vera underline*/
