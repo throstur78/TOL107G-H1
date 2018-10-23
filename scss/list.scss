@@ -9,8 +9,8 @@
     margin: 0 auto;
     cursor: default;
 
-    @media (min-width: 600px){
-        :nth-child(2) &__row:first-child{
+    @media (max-width: 600px){
+        &__row:nth-child(2) &__col:first-child{
             order: 2;
         }        
     }
