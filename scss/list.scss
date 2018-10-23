@@ -3,10 +3,18 @@
 
 @import "config";
 
+
 .list {
     max-width: $max-width;
     margin: 0 auto;
     cursor: default;
+
+    @media (min-width: 600px){
+        :nth-child(2) &__row:first-child{
+            order: 2;
+        }        
+    }
+    
 
     @media (max-width: $max-width - 1){
         padding-right: $gutter;
@@ -16,6 +24,7 @@
     &__row {
         @include row;
         flex-wrap: wrap;
+        margin-top: $gutter*2;
 
         @media (min-width: 600px){
             flex-wrap: nowrap;
@@ -34,6 +43,7 @@
 
         @media (min-width: 600px){
             @include columns(6);
+            
         }
     }
 }
