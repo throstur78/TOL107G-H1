@@ -13,6 +13,7 @@
     &__row {
         @include row;
         flex-wrap: wrap;
+        margin-bottom: $gutter;
 
         @media (min-width: 800px){
             flex-wrap: nowrap;
@@ -20,7 +21,6 @@
     }
 
     &__col {
-        padding-bottom: 20px;
         @include columns (12);
 
         @media (min-width: 800px){
@@ -42,7 +42,6 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        max-height: 600px;
     }
 
     &__nedrabox {
@@ -62,6 +61,11 @@
 
     &__listProducts{
         flex-grow: 1;
+    }
+
+    .textStrong__voruheiti{
+        font-family: "Oswald";
+        margin-top: 0;
     }
 
     .buttonKarfa{
@@ -206,7 +210,10 @@
 }
 
 .textStrong{
-    margin: $gutter/2 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: $gutter/2;
 }
 
 .textNormal{
