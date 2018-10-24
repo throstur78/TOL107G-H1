@@ -3,7 +3,15 @@
 @import "scss/footer";
 
 .staff {
-	padding: 10px;
+	//padding: 10px;
+	@media (max-width: $max-width - 1) {
+		padding-right: $gutter;
+		padding-left: $gutter;
+	}
+}
+
+.staff__starfsmadur {
+	perspective: 1000px;
 }
 /* flip the pane when hovered */
 .staff__starfsmadur:hover {
@@ -12,11 +20,9 @@
 
 .staff__image {
 	width: 100%;
-	padding: 10px;
 }
 /* flip speed goes here */
 .staff__starfsmadur {
-	perspective: 1000px;
 	transition: 0.3s;
 	transform-style: preserve-3d;
 }
@@ -39,7 +45,7 @@
 	top: 30%;
 	text-align: center;
 	width: 100%;
-	padding: 10%
+	padding: 10%;
 }
 
 .staff__description__name {

@@ -3,6 +3,26 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.grid {
+  &__row {
+    @include row;
+    flex-wrap: wrap;
+    margin-bottom: $gutter;
+    @media (min-width: 800px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__col {
+    margin-top: $gutter/2;
+    @include columns (12);
+    @media (min-width: 800px) {
+      @include columns(8);
+      margin-top: 0;
+    }
+  }
+}
 @media (max-width: 799px) {
   .grid__col--6 {
     max-width: 100%;
@@ -11,5 +31,6 @@
 @media (min-width: 800px) {
   .grid__col--6 {
     max-width: 50%;
+    padding: 10px;
   }
 }

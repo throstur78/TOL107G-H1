@@ -22,12 +22,12 @@ html {
 
 body {
   margin: 0 auto;
-  color: #000;
-  background-color: #fff;
+  color: $black;
+  background-color: $white;
 }
 
 main {
-  max-width: 1200px;
+  max-width: $max-width;
   margin: 0 auto;
   cursor: default;
 }
