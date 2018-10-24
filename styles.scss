@@ -13,10 +13,10 @@
 }
 
 html { /* stylelint-disable-line */
-  font-family: $baseFont;
-  font-size: 16px;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: $baseFont;
+  font-size: 16px;
 }
 
 body {
