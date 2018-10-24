@@ -1,28 +1,21 @@
 @import "config";
 
 .button {
-    background-color: $salmon;
-    color: $black;
+  background-color: $salmon;
+  color: $black;
+  padding: $gutter/2 $gutter;
+  text-align: center;
+  margin: $gutter 0;
+  //Má skilgreina breidd takkans svona? Ég bara spyr...
+  width: 200px;
+  transition: color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
 
-    padding: $gutter/2 $gutter;
-    text-align: center;
-    margin: $gutter 0;
+  &:hover {
+    background-color: $black;
+    color: $salmon;
+    cursor: pointer;
+  }
 
-    //Má skilgreina breidd takkans svona? Ég bara spyr...
-    width: 200px;
-
-    transition: color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-
-
-
-    &:hover {
-        background-color:$black ;
-        color: $salmon;
-        cursor: pointer;
-    }
-
-    &__text {
-
-    }
+  &__text {}
 }

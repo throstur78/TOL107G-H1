@@ -1,183 +1,206 @@
 @import "config";
 
- .fyrirsogn{
-     max-width: $max-width;
-     margin: 0 auto;
-     @media (max-width: $max-width - 1){
-         padding-right: $gutter;
-         padding-left: $gutter;
-    }
+.fyrirsogn {
+  max-width: $max-width;
+  margin: 0 auto;
+  @media (max-width: $max-width - 1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
 }
- .cart {
-     cursor: default;
-     max-width: $max-width;
-     margin: 0 auto;
-     @media (max-width: $max-width - 1){
-         padding-right: $gutter;
-         padding-left: $gutter;
+
+.cart {
+  cursor: default;
+  max-width: $max-width;
+  margin: 0 auto;
+  @media (max-width: $max-width - 1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+
+  &__row {
+    @include row;
+    flex-wrap: wrap;
+    margin-bottom: $gutter;
+    @media (min-width: 800px) {
+      flex-wrap: nowrap;
     }
-     &__row {
-         @include row;
-         flex-wrap: wrap;
-         margin-bottom: $gutter;
-         @media (min-width: 800px){
-             flex-wrap: nowrap;
-        }
+  }
+
+  &__col {
+    margin-top: $gutter/2;
+    @include columns (12);
+    @media (min-width: 800px) {
+      @include columns(8);
+      margin-top: 0;
     }
-     &__col {
-        margin-top: $gutter/2;
-         @include columns (12);
-         @media (min-width: 800px){
-             @include columns(8);
-             margin-top: 0;
-        }
+  }
+
+  &__colImage {
+    margin-top: $gutter/3;
+    @include columns (12);
+    @media (min-width: 800px) {
+      @include columns(4);
     }
-     &__colImage {
-        margin-top: $gutter/3;
-         @include columns (12);
-         @media (min-width: 800px){
-             @include columns(4);
-        }
+  }
+
+  &__productInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__nedrabox {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 20px;
+  }
+
+  &__nedstaflex {
+    display: flex;
+    padding-bottom: 7px;
+  }
+
+  &__listProducts {
+    flex-grow: 1;
+  }
+
+  .textStrong__voruheiti {
+    font-family: "Oswald";
+    margin-top: 0;
+  }
+
+  .buttonKarfa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 145px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: solid 0.5px;
+    font-size: 1em;
+    background-color: white;
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+      background-color: $salmon;
+      cursor: pointer;
     }
-     &__productInfo{
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         height: 100%;
+
+    &__text {
+      margin-left: $gutter/2;
     }
-     &__nedrabox {
-         display: flex;
-         flex: 1;
-         flex-wrap: wrap;
-         flex-direction: column;
-         justify-content: flex-end;
-         padding-top: 20px;
-    }
-     &__nedstaflex{
-         display: flex;
-         padding-bottom: 7px;
-    }
-     &__listProducts{
-         flex-grow: 1;
-    }
-     .textStrong__voruheiti{
-         font-family: "Oswald";
-         margin-top: 0;
-    }
-     .buttonKarfa{
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         min-width: 145px;
-         height: 35px;
-         margin-left: 10px;
-         border-radius: 5px;
-         border: solid 0.5px;
-         font-size: 1em;
-         background-color: white;
-         transition: background-color 300ms ease-in-out;
-         &:hover {
-             background-color: $salmon;
-             cursor: pointer;
-        }
-         &__text{
-             margin-left: $gutter/2;
-        }
-    }
-     .checkout__image{
-         height: 20px;
-         width: 20px;
-    }
-     .fjoldi{
-         cursor: auto;
-         width: 90px;
-         height: 35px;
-         border-radius: 5px;
-         border: 1px;
-         border: solid 1px;
-         padding: 10px;
-         font-size: 1em;
-    }
+  }
+
+  .checkout__image {
+    height: 20px;
+    width: 20px;
+  }
+
+  .fjoldi {
+    cursor: auto;
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px;
+    border: solid 1px;
+    padding: 10px;
+    font-size: 1em;
+  }
 }
- .form {
-     max-width: $max-width;
-     margin: 0 auto;
-     @media (max-width: $max-width - 1){
-         padding-right: $gutter;
-         padding-left: $gutter;
-         padding-top: $gutter;
+
+.form {
+  max-width: $max-width;
+  margin: 0 auto;
+  @media (max-width: $max-width - 1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+    padding-top: $gutter;
+  }
+
+  &__row {
+    display: flex;
+    @include row;
+    @media (max-width: 799px) {
+      flex-direction: column;
     }
-     &__row {
-         display: flex;
-         @include row;
-         @media (max-width: 799px){
-             flex-direction: column;
-        }
-         @media (min-width: 1200px){
-             @include offset-right(2);
-             @include offset-left(2);
-        }
+    @media (min-width: 1200px) {
+      @include offset-right(2);
+      @include offset-left(2);
     }
-     &__col {
-         padding-bottom: $gutter;
-         @include columns (12);
-         @media (min-width: 800px){
-             @include columns(12);
-        }
+  }
+
+  &__col {
+    padding-bottom: $gutter;
+    @include columns (12);
+    @media (min-width: 800px) {
+      @include columns(12);
     }
-     &__reitirtexti{
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-    }
-     &__box{
-         margin-top: 10px;
-         display: flex;
-         flex-direction: column;
-    }
-     &__gildistimi{
-         display: flex;
-         justify-content: space-between;
-         width: 65%;
-    }
-     .reiturinfo {
-         width: 65%;
-         height: 35px;
-         margin-bottom: 10px;
-         border-radius: 5px;
-         border: solid 1px;
-         font-size: 1em;
-    }
-     .reiturinfo--man {
-         width: 40px;
-         height: 35px;
-         border: solid 1px;
-         justify-content: center;
-         font-size: 1em;
-    }
-     .reiturinfo--ar {
-         width: 80px;
-         height: 35px;
-         border: solid 1px;
-         font-size: 1em;
-    }
-     .labelReitir {
-         height: 35px;
-         margin-bottom: 10px;
-    }
+  }
+
+  &__reitirtexti {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__box {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__gildistimi {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+  }
+
+  .reiturinfo {
+    width: 65%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: solid 1px;
+    font-size: 1em;
+  }
+
+  .reiturinfo--man {
+    width: 40px;
+    height: 35px;
+    border: solid 1px;
+    justify-content: center;
+    font-size: 1em;
+  }
+
+  .reiturinfo--ar {
+    width: 80px;
+    height: 35px;
+    border: solid 1px;
+    font-size: 1em;
+  }
+
+  .labelReitir {
+    height: 35px;
+    margin-bottom: 10px;
+  }
 }
- .buttonkaupa{
-     display: flex;
-     justify-content: center;
+
+.buttonkaupa {
+  display: flex;
+  justify-content: center;
 }
- .textStrong{
-     margin-top: 0;
-     margin-left: 0;
-     margin-right: 0;
-     margin-bottom: $gutter/2;
+
+.textStrong {
+  margin: 0 0 $gutter/2;
 }
- .textNormal{
-     margin: 0;
+
+.textNormal {
+  margin: 0;
 }
- 

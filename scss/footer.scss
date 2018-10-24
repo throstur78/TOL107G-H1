@@ -19,6 +19,7 @@
     color: $yellow;
     text-decoration: none;
   }
+
   ul li a:hover {
     color: $black;
     transition: color 300ms ease-in-out;
@@ -51,7 +52,6 @@
   }
   //Set margin sem 1/4 af gutter en skv. verklýsingu
   //ætti það í minnsta lagi að vera 1/2.
-
   &__item {
     margin: $gutter/4 0;
     color: $lightBlue;
@@ -67,11 +67,3 @@
   padding: $gutter*2 0;
   text-align: center;
 }
-/*Allir litir sem eru í verkefninu:
-color: $uglyYellow;
-color: $lightBlue;
-color: $yellow;
-color: $salmon;
-color: $black:
-color: $white;
-*/

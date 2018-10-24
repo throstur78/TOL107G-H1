@@ -1,109 +1,91 @@
 // ÞETTA ER AFRIT FRÁ ÓLAFI
-
-
 @import "config";
 
 .listProduct {
-    cursor: default;
-    max-width: $max-width;
-    margin: 0 auto;
+  cursor: default;
+  max-width: $max-width;
+  margin: 0 auto;
+  @media (max-width: $max-width - 1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
 
-    @media (max-width: $max-width - 1){
-        padding-right: $gutter;
-        padding-left: $gutter;
+  &__description {
+    flex-grow: 1;
+  }
+
+  &__row {
+    @include row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    @media (min-width: 600px) {
+      //flex-wrap: nowrap;
     }
+  }
 
-    &__description{
-        flex-grow: 1;
+  &__row--vertical {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__col {
+    @include columns (12);
+    margin-bottom: $gutter*2;
+    @media (min-width: 600px) {
+      @include columns(6);
     }
-
-    &__row {
-        @include row;
-        flex-wrap: wrap;
-        align-items: stretch;
-
-        @media (min-width: 600px){
-            //flex-wrap: nowrap;
-        }
+    @media (min-width: 1000px) {
+      @include columns(4);
     }
-
-    &__row--vertical {
-        height:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    &__col {
-        @include columns (12);
-        margin-bottom: $gutter*2;
-
-        @media (min-width: 600px){
-            @include columns(6);
-        }
-
-        @media (min-width: 1000px){
-            @include columns(4);
-        }
-    }
+  }
 }
 
-.purchase{
+.purchase {
+  &__boxes {
+    display: flex;
+  }
 
-    &__boxes{
-        display: flex;
-    }
-  
-    &__boxInput{
-        flex-grow: 1;
-        border: solid 1px;
-        border-radius: 5px;
-        padding: 10px;
-    }
+  &__boxInput {
+    flex-grow: 1;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+  }
 
-    &__amount{
-        cursor: auto;
-        max-width: 60px;
-        border: 0;
-    }
+  &__amount {
+    cursor: auto;
+    max-width: 60px;
+    border: 0;
+  }
 }
 
 .checkoutButton {
-    
-    &__box{
-        display: flex;
-        margin-left: $gutter/2;
-        justify-content: center;
-        padding: 10px;
-        align-items: center;
-        border: solid 1px;
-        border-radius: 5px;
-        min-width: 140px;
+  &__box {
+    display: flex;
+    margin-left: $gutter/2;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 5px;
+    min-width: 140px;
+    transition: background-color 300ms ease-in-out;
 
-        transition: background-color 300ms ease-in-out;
-
-        &:hover {
-            background-color: $salmon;
-            cursor: pointer;
-        }
+    &:hover {
+      background-color: $salmon;
+      cursor: pointer;
     }
+  }
 
-    &__image {
-        align-content: center;
-        width: 20px;
-        height: 20px;
-    }
+  &__image {
+    align-content: center;
+    width: 20px;
+    height: 20px;
+  }
 
-    &__text {
-        margin-left: $gutter/2;
-
-        
-
-        
-    }
-
-    
-
-
-
+  &__text {
+    margin-left: $gutter/2;
+  }
 }

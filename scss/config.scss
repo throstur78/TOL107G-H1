@@ -1,7 +1,6 @@
 // Text and Fonts
 $baseFont: "Open Sans", helvetica, arial, sans-serif;
 $headlineFont: "Oswald", verdana, serif;
-
 // Base Colors
 $uglyYellow: #afb281;
 $lightBlue: #cee8ff;
@@ -9,37 +8,28 @@ $yellow: #fcffd2;
 $salmon: #cc9694;
 $black: #000000;
 $white: #ffffff;
-
 // Header Colors
 $headerBgColor: $uglyYellow;
 $headerColor: $black;
-
 // Footer Colors
 $footerBgColor: $salmon;
 $footerColor: $black;
 $footerLinkColor: $yellow;
-
 $max-width: 1200px;
 $gutter: 20px;
-
 @mixin row() {
-    display: flex;
-
-    margin-right: -($gutter/2);
-    margin-left: -($gutter/2);
+  display: flex;
+  margin-right: -($gutter/2);
+  margin-left: -($gutter/2);
 }
-
 @mixin columns($col: 1) {
-    width: ($col /12 * 100) * 1%;
-
-    padding-right: $gutter/2;
-    padding-left: $gutter/2;
+  width: ($col /12 * 100) * 1%;
+  padding-right: $gutter/2;
+  padding-left: $gutter/2;
 }
-
 @mixin offset-left($col: 0) {
-    margin-left: ($col /12 * 100) * 1%;
+  margin-left: ($col /12 * 100) * 1%;
 }
-
 @mixin offset-right($col: 0) {
-    margin-right: ($col /12 * 100) * 1%;
+  margin-right: ($col /12 * 100) * 1%;
 }

@@ -1,21 +1,20 @@
 //Texti sem birtist í header og footer eru skilgreindir í þeim scss skrám ekki hér
-
 @import "config";
 
 .textStrong {
-    font-family: 'Oswald';
-    margin: 0 $gutter;
+  font-family: 'Oswald';
+  margin: 0 $gutter;
 }
 
 .textNormal {
-    font-family: 'Open Sans';
-    margin: $gutter 0;
+  font-family: 'Open Sans';
+  margin: $gutter 0;
 }
 
 h2 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 h3 {
-    font-size: 21px;
+  font-size: 21px;
 }

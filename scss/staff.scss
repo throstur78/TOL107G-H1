@@ -3,13 +3,9 @@
 @import "scss/footer";
 
 .staff {
-	perspective: 1000px;
 	padding: 10px;
 }
-.staff__starfsmadur{
-
-}
-	/* flip the pane when hovered */
+/* flip the pane when hovered */
 .staff__starfsmadur:hover {
 	transform: rotateY(180deg);
 }
@@ -18,33 +14,32 @@
 	width: 100%;
 	padding: 10px;
 }
-
 /* flip speed goes here */
 .staff__starfsmadur {
-	transition: 0.6s;
+	perspective: 1000px;
+	transition: 0.3s;
 	transform-style: preserve-3d;
 }
-
 /* hide back of pane during swap */
-.staff__image, .staff__description {
+.staff__description,
+.staff__image {
 	backface-visibility: hidden;
 	top: 0;
 	left: 0;
 }
-
 /* front pane, placed above back */
 .staff__image {
 	z-index: 2;
 	transform: rotateY(0deg);
 }
-
 /* back, initially hidden pane */
 .staff__description {
 	transform: rotateY(180deg);
 	position: absolute;
 	top: 30%;
 	text-align: center;
-	margin: 100px;
+	width: 100%;
+	padding: 10%
 }
 
 .staff__description__name {

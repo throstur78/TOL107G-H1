@@ -7,12 +7,13 @@
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
-html { /* stylelint-disable-line */
+html {
+  /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: $baseFont;
@@ -25,6 +26,11 @@ body {
   background-color: #fff;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  cursor: default;
+}
 @import "scss/grid";
 @import "scss/button";
 @import "scss/header";
