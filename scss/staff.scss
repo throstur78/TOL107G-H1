@@ -4,6 +4,7 @@
 
 .staff {
 	perspective: 1000px;
+	padding: 10px;
 }
 .staff__starfsmadur{
 
@@ -15,6 +16,7 @@
 
 .staff__image {
 	width: 100%;
+	padding: 10px;
 }
 
 /* flip speed goes here */
@@ -33,7 +35,6 @@
 /* front pane, placed above back */
 .staff__image {
 	z-index: 2;
-	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
@@ -41,5 +42,11 @@
 .staff__description {
 	transform: rotateY(180deg);
 	position: absolute;
-	top: 50%;
+	top: 30%;
+	text-align: center;
+	margin: 100px;
+}
+
+.staff__description__name {
+	font-weight: bold;
 }
