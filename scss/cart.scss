@@ -6,7 +6,7 @@
     }
 }
  .cart {
-     @media (max-width: $max-width - 1) {
+     @media (max-width: $max-width ) {
          padding-right: $gutter;
          padding-left: $gutter;
     }
@@ -124,9 +124,9 @@
      &__gildistimi {
          display: flex;
          justify-content: space-between;
+         align-items: baseline;
          width: 65%;
     }
-  }
      .reiturinfo {
          width: 65%;
          height: 44px;
@@ -136,7 +136,7 @@
          font-size: 1em;
     }
      .reiturinfo--man {
-         width: 40px;
+         width: 44px;
          height: 44px;
          border: solid 1px;
          justify-content: center;
@@ -152,6 +152,7 @@
          height: 44px;
          margin-bottom: 10px;
     }
+}
  .buttonkaupa {
      display: flex;
      justify-content: center;
