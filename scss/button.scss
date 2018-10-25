@@ -6,7 +6,7 @@
   padding: $gutter/2 $gutter;
   text-align: center;
   margin: $gutter 0;
-  //Má skilgreina breidd takkans svona? Ég bara spyr...
+  
   width: 200px;
   transition: color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
@@ -16,6 +16,5 @@
     color: $salmon;
     cursor: pointer;
   }
-
-  &__text {}
 }
+
