@@ -2,7 +2,6 @@
 
 .grid {
   @media (max-width: $max-width - 1) {
-    /* ROW mixin is halving size... Why? need to compensate for that here */
     padding-right: $gutter+10;
     padding-left: $gutter+10;
   }
@@ -10,7 +9,6 @@
     padding-right: $gutter;
     padding-left: $gutter;
   }
-  /* Reusing other student's grid styles needs to compensate for size above max-width + */
   @media (min-width: 1250px) {
     padding-right: 0;
     padding-left: 0;
