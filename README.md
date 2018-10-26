@@ -1,26 +1,40 @@
 # Hópverkefni 1 - Vöruhúsið
 
-Verkefni fyrir Vefforritun 1 (TOL107G) - 
+Verkefni fyrir Vefforritun 1 (TOL107G).
+Smíðuðum "mobile first", "responsive" vef eftir forskrift með forsíðu, vörusíðu, starfsmannasíðu og körfu.
 
 ## Til að keyra verkefni
 
 * npm install
+ * nauðsynlegt til að byrja verkefnið
 * npm run lint
+ * notað til að validate-a scss files
 * npm run dev
+ * til að keyra serverinn
 
-## Uppsetning
+Verkefnið notar Browser-sync og Sass. Allt HTML og CSS er uppfært í browsernum þegar þú gerir breytingar á meðan serverinn er í gangi.
 
-Files, folders etc
+Server runs on http://localhost:3000
+
+## Uppsetning á verkefni
+
+* img folder - allar myndir í verkefni
+* pages folder - allar síður í verkefni fyrir utan forsíðu (subpages) sem er í rót verkefnis.
+* scss folder - allar scss files
+
+
+Note: styles.css er "automatically generated file" og ætti aldrei að vera "checked in".
+
 
 ## Nemendur sem unnu að verkefni
 
-Þröstur  - throstur78
-Steinunn Ósk Axelsdóttir - soa20
-Þuríður Hilmarsdóttir - thh167
+* Þröstur  - [throstur78](http://github.com/throstur78)
+* Steinunn Ósk Axelsdóttir - [soa20](https://github.com/soa20)
+* Þuríður Hilmarsdóttir - [thh167](https://github.com/thh167)
 
-
-
-
+########################################
+### Upprunalegt verkefni
+########################################
 
 # Hópverkefni 1
 
