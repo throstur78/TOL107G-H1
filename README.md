@@ -28,7 +28,7 @@ Note: styles.css er "automatically generated file" og ætti aldrei að vera "che
 
 ## Nemendur sem unnu að verkefni
 
-* Þröstur  - [throstur78](http://github.com/throstur78)
+* Þröstur Hrafnkelsson - [throstur78](http://github.com/throstur78)
 * Steinunn Ósk Axelsdóttir - [soa20](https://github.com/soa20)
 * Þuríður Hilmarsdóttir - [thh167](https://github.com/thh167)
 
