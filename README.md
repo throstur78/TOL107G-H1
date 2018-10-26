@@ -32,9 +32,9 @@ Note: styles.css er "automatically generated file" og ætti aldrei að vera "che
 * Steinunn Ósk Axelsdóttir - [soa20](https://github.com/soa20)
 * Þuríður Hilmarsdóttir - [thh167](https://github.com/thh167)
 
-########################################
+---
 ### Upprunalegt verkefni
-########################################
+---
 
 # Hópverkefni 1
 
