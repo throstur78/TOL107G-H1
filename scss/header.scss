@@ -2,7 +2,6 @@
 
 .header {
   cursor: default;
-  //  width: 100%;
   background-color: $uglyYellow;
   margin-bottom: $gutter*2;
 }
@@ -14,7 +13,6 @@
 }
 
 .menubar {
-  //padding: 10px;
   max-width: $max-width;
   margin: 0 auto;
   display: flex;
@@ -68,7 +66,7 @@
   font-family: 'Oswald';
   font-size: 18px;
 }
-/*Active síða á að vera underline*/
+
 .link {
   color: $black;
   transition: color 300ms ease-in-out;
