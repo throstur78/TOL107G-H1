@@ -1,3 +1,26 @@
+# Hópverkefni 1 - Vöruhúsið
+
+Verkefni fyrir Vefforritun 1 (TOL107G) - 
+
+## Til að keyra verkefni
+
+* npm install
+* npm run lint
+* npm run dev
+
+## Uppsetning
+
+Files, folders etc
+
+## Nemendur sem unnu að verkefni
+
+Þröstur  - throstur78
+Steinunn Ósk Axelsdóttir - soa20
+Þuríður Hilmarsdóttir - thh167
+
+
+
+
 
 # Hópverkefni 1
 
